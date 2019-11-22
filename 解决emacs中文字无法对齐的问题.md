@@ -5,9 +5,9 @@
     (add-to-list 'default-frame-alist
      '(font . "Noto Sans Mono CJK SC-14"))
 
-# 修改一些中文标点符号和unicode字符的错误的列计数。
+# 修改几个字符的错误的列计数。
 
-emacs26.3的Fundamental及text mode中，几个中文标点符号和unicode符号的列计数是错的。
+emacs26.3的Fundamental及text mode中，几个unicode字符的列计数是错的。
 包括：中文的双引号、破折号、省略号以及×和÷及·符号。
 其它一些在屏幕上占用的像素宽度是ascii字符两倍宽度的字符，这里并没有进行修改。
 似乎unicode字符库的分类不是很合理，一些双倍宽度的字符和只占一个英文字母宽度的字符混在了一起。这个问题在终端下也很明显，一些两倍宽度的字符需要稍作调整才能正常显示。
