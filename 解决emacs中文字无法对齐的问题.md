@@ -16,7 +16,7 @@ emacs26.3的Fundamental及text mode中，几个中文标点符号和unicode符�
                (#x2014 . #x2015)
                (#x201C . #x201D) #x2026)))
       (dolist (elt l)
-        (set-char-table-range char-width-table elt 2)))`
+        (set-char-table-range char-width-table elt 2)))
 
 上面几行文本需要放在textmode启用之后。
 如果不确定是哪个模式设置了错误的char-width-table,可将上面几行放在文件的结尾。
